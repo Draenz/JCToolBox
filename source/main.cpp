@@ -22,8 +22,8 @@ int main(int argc, char* argv[])
 		hidsysGetUniquePadSerialNumber(UniquePadIds[1], serial);
 		printf("Right joycon serial number: %s\n", serial);
 		//Colour is in BGR format
-		rc = hiddbgUpdateControllerColor(0xE6B90A,0x1E0A0A,UniquePadIds[0]); //Set left Joycon to Neon Blue
-		rc = hiddbgUpdateControllerColor(0x283cff,0x1E0A0A,UniquePadIds[1]); //Set left Joycon to Neon Red
+		rc = hiddbgUpdateControllerColor(0xD7AA73,0x1E1914,UniquePadIds[0]); //Set left Joycon to Labo Creators (L)
+		rc = hiddbgUpdateControllerColor(0xD7AA73,0x1E1914,UniquePadIds[1]); //Set right Joycon to Labo Creators (R)
 		//Output if success
 		if(R_SUCCEEDED(rc)) printf("Managed to set colors\n");
 		else printf("Failed to set colors\n");
